@@ -6,6 +6,7 @@ Simple Android library, which can serve as Image Slider too !
 [Usage](#usage)  
 [Check the latest Version](#latestVersion)  
 [Flurry step by step gradle integration for gradle beginners](#stepbystepgradle)  
+[About author](#aboutAuthor)
 
 
 
@@ -97,7 +98,18 @@ dependencies {
 
 And you are done
 
+<a name="aboutAuthor"/>
 
+## About author
+<p align="center">This Repository is developed and maintained by </p>
+<p align="center">
+  <a href="https://github.com/rohitksingh/Test-Repository"><img width="100" height="100" src="https://user-images.githubusercontent.com/11274840/30594610-3763cbce-9d6c-11e7-9576-d616fab835f7.png" title="About Me">
+</p></a>
+<a href="https://github.com/rohitksingh/Test-Repository">
+<p align="center">
+  Rohit Singh
+</p>
+</a>
 
 
 
