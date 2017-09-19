@@ -1,49 +1,80 @@
 # **Flurry The Carousel**
 Simple Android library, which can serve as Image Slider too !
 
-# Table of Contents  
+## Table of Contents  
 [Gradle dependecy](#gradledependency)  
-[How to integrate ?](#Header)  
-[Adding Flurry to Layout](#FlurryXml)  
-[Adding Flurry to Java File](#Header)  
-[Check the latest version](#latestVersion)  
-[How to integrate ?](#Header)  
-[How to integrate ?](#Header)  
-[Flurry step by step gradle integration for newbies to gradle](#stepbystepgradle)  
+[Usage](#usage)  
+[Check the latest Version](#latestVersion)  
+[Flurry step by step gradle integration for gradle beginners](#stepbystepgradle)  
 
 
 
 <a name="gradledependency"/>     
 
-## **Gradle Dependency** 
-### `compile 'com.github.rohitksingh:Flurry:1.0.2`
+## **Gradle:** 
+ `             
+compile 'com.github.rohitksingh:Flurry:1.0.2                                                                                                                       
+`
 
 <a name="Header"/>
 
-## **How to integrate ?** 
-If you are already familiar with gradle
+### **How to integrate ?** 
+If you are already familiar with gradle. Add the following code in your root build.gradle .          
+If you are new to gradle see below  [Step by step integration guide](#stepbystepgradle) .
 
-Just Add the following code in your root build.gradle . If you are new to gradle see below      
-[Step by step integration guide](#stepbystepgradle) .
+> build.gradle
 
-`allprojects {
+    allprojects {
 		repositories {
 			...
 			maven { url 'https://jitpack.io' }
 		}
 	}
 
-dependencies {
-		compile 'com.github.User:Repo:Tag'
-	}`
- <a name= "stepbystepgradle"/>
-## **Step by step guide to integrate Flurry dependency in gradle file (For Beginners to Gradle)**
+> build.gradle
 
-#### **1)  Go to your root build.gradle**
+    dependencies {
+       compile 'com.github.rohitksingh:Flurry:1.0.2'
+    }
+
+<a name="usage"/>
+
+## **Usage:**
+
+### **Add following code in your layout**
+
+    <com.rohksin.flurry.Flurry
+        android:id="@+id/flurry"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+### **Add following code in your Activity**
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+       
+
+        Flurry flurry = (Flurry)findViewById(R.id.flurry);
+        
+    }
+
+<a name ="latestVersion"/>  
+              
+## **Check the latest Version:**             
+                
+You can find the latest version of Flurry in [JitPack.io](https://jitpack.io/#rohitksingh/Flurry-The-Carousel)
+
+ <a name= "stepbystepgradle"/>
+
+## **Flurry step by step gradle integration for gradle beginners:**
+
+### **1)  Go to your root build.gradle**
 
 ??????Image ??????
 
-#### **2) Add repository link and dependency like this**  
+### **2) Add repository link and dependency like this**  
 
 
 
@@ -58,25 +89,15 @@ dependencies {
 		compile 'com.github.User:Repo:Tag'
 	}
 
-#### **3) Finally your build.gradle file will look like this** 
+### **3) Finally your build.gradle file will look like this** 
 
 ??????? Image
 
-#### **4) Hit the sync Button**
+### **4) Hit the sync Button**
 
 And you are done
 
 
 
-<a name= "FlurryXml"/>
-Adding Flurry to Layout (xml)
 
-`<com.rohksin.flurry.Flurry
-        android:id="@+id/flurry"
-        android:layout_width="match_parent"
-        android:layout_height="300dp"/>`
 
-<a name ="latestVersion"/>                
-## **Check the latest Version**             
-                
-[JitPack.io](https://jitpack.io/#rohitksingh/Flurry-The-Carousel)
