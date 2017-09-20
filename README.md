@@ -72,11 +72,13 @@ You can find the latest version of Flurry in [JitPack.io](https://jitpack.io/#ro
 ## **Flurry step by step gradle integration for gradle beginners:**
 
 ### **1)  Go to your root build.gradle**
+dependencies {
+		compile 'com.github.User:Repo:Tag'
+	}
 
-??????Image ??????
+![repo](https://user-images.githubusercontent.com/11274840/30658631-38906c12-9df0-11e7-9625-5dd06f38c2ab.png)
 
 ### **2) Add repository link and dependency like this**  
-
 
 
 allprojects {
@@ -85,16 +87,17 @@ allprojects {
 			maven { url 'https://jitpack.io' }
 		}
 	}
+	
+![compile](https://user-images.githubusercontent.com/11274840/30658703-6ea1122a-9df0-11e7-873d-32e165c03d80.png)	
 
-dependencies {
-		compile 'com.github.User:Repo:Tag'
-	}
 
 ### **3) Finally your build.gradle file will look like this** 
 
 ??????? Image
 
 ### **4) Hit the sync Button**
+
+![gradle](https://user-images.githubusercontent.com/11274840/30658730-8ad314ca-9df0-11e7-886c-ac9d4ed4a7e6.png)
 
 And you are done
 
