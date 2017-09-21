@@ -14,7 +14,7 @@ Simple Android library, which can serve as Image Slider too !
 
 ## **Gradle:** 
  `             
-compile 'com.github.rohitksingh:Flurry:1.0.2                                                                                                                       
+compile 'com.github.rohitksingh:Flurry:1.0.3                                                                                                                       
 `
 
 <a name="Header"/>
@@ -23,7 +23,7 @@ compile 'com.github.rohitksingh:Flurry:1.0.2
 If you are already familiar with gradle. Add the following code in your root build.gradle .          
 If you are new to gradle see below  [Step by step integration guide](#stepbystepgradle) .
 
-> build.gradle
+> Add hosting repository url 
 
     allprojects {
 		repositories {
@@ -32,10 +32,10 @@ If you are new to gradle see below  [Step by step integration guide](#stepbystep
 		}
 	}
 
-> build.gradle
+> Add compile time dependency
 
     dependencies {
-       compile 'com.github.rohitksingh:Flurry:1.0.2'
+       compile 'com.github.rohitksingh:Flurry:1.0.3'
     }
 
 <a name="usage"/>
@@ -65,41 +65,43 @@ If you are new to gradle see below  [Step by step integration guide](#stepbystep
               
 ## **Check the latest Version:**             
                 
-You can find the latest version of Flurry in [JitPack.io](https://jitpack.io/#rohitksingh/Flurry-The-Carousel)
+You can find the latest version of Flurry in [JitPack.io](https://jitpack.io/#rohitksingh/Flurry)
 
  <a name= "stepbystepgradle"/>
 
 ## **Flurry step by step gradle integration for gradle beginners:**
 
-### **1)  Go to your root build.gradle**
-dependencies {
-		compile 'com.github.User:Repo:Tag'
-	}
+### **1)  Go to your project build.gradle and this**
 
-![repo](https://user-images.githubusercontent.com/11274840/30658631-38906c12-9df0-11e7-9625-5dd06f38c2ab.png)
-
-### **2) Add repository link and dependency like this**  
-
-
-allprojects {
+     allprojects {
 		repositories {
 			...
 			maven { url 'https://jitpack.io' }
 		}
-	}
+	 }
+
+
+
+![repo](https://user-images.githubusercontent.com/11274840/30658631-38906c12-9df0-11e7-9625-5dd06f38c2ab.png)
+
+### **2) Go to app modile build.gradle and add this**  
+  
+      dependencies {
+       compile 'com.github.rohitksingh:Flurry:1.0.3'
+    }
+
+
 	
 ![compile](https://user-images.githubusercontent.com/11274840/30658703-6ea1122a-9df0-11e7-873d-32e165c03d80.png)	
 
 
-### **3) Finally your build.gradle file will look like this** 
 
-??????? Image
 
-### **4) Hit the sync Button**
+### **3) Hit the sync Button**
 
 ![gradle](https://user-images.githubusercontent.com/11274840/30658730-8ad314ca-9df0-11e7-886c-ac9d4ed4a7e6.png)
 
-And you are done
+### And you are done.
 
 <a name="aboutAuthor"/>
 
